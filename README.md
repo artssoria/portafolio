@@ -19,7 +19,7 @@ Para empezar debemos crear un entorno virtual.
 ##### Para crear un proyecto nuevo e iniciarlo debemos usar el comando django-admin.
 
 ```bash
-    django-admin startproject porfafolio
+    django-admin startproject portafolio
 ```
 
 ##### Despues para crear un app dentro del proyecto en cuestion vamos a usar otro comando startapp.
