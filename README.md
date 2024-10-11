@@ -22,13 +22,8 @@ Para empezar debemos crear un entorno virtual.
     django-admin startproject portafolio
 ```
 
-##### Despues para crear un app dentro del proyecto en cuestion vamos a usar otro comando startapp.
 
-```bash
-    python manage.py startapp portafolio #Esta va a ser la raiz de nuestro proyecto
-```
-
-##### Despues debemos crear otra app dentro del proyecto con el mismo comando.
+##### Despues debemos crear la app dentro del proyecto con el comando.
 
 ```bash
     python manage.py startapp core #Va a ser la app que va a interactuar con el proyecto.
