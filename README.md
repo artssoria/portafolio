@@ -106,3 +106,47 @@ Se va renderizar la vista principal de la pagina
  - Contraseña : admin
 
 * En este lugar vamos a ver por primera vez una estructura completa de modelos y vistas funcionando de manera visual a Django. 
+
+- Despues en la vamos a crear una carpeta en el directorio **core/templates** 
+- Es decir que vamos a crear la carpeta **templates** y dentro de la misma vamos a crear una serie de html's.
+  
+```bash
+    |core/
+        |-----about.html
+        |-----base.html
+        |-----contact.html
+        |-----home.html
+        |-----portfolio.html
+```
+Despues debemos ir al directorio **portafolio/urls.py**, debemos agregar las vistas que hemos agregado anteriormente en la carpeta templates.
+
+```bash
+from django.contrib import admin
+from django.urls import path
+from core import views
+
+urlpatterns = [
+    path('',views.home, name="home"),
+    path("about/", views.about, name="about"),
+    path("porfolio/", views.porfolio, name="porfolio"),
+    path("contact/", views.contact, name="contact"),
+    path('admin/', admin.site.urls),
+]
+```
+
+Para que estos se pueda visualizar debemos ir a la carpeta y editar el archivo **core/views.py** y agregar lo siguiente. 
+
+```bash
+
+from django.shortcuts import render
+
+def home(request):
+    return render(request, 'core/home.html')
+def about(request):
+    return render(request, 'core/about.html')
+def porfolio(request):
+    return render(request, 'core/portfolio.html')
+def contact(request):
+    return render(request, 'core/contact.html')
+    
+```
