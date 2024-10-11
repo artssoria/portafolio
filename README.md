@@ -7,7 +7,7 @@ Para empezar debemos crear un entorno virtual.
 ##### Activo el entorno virtual.
 
 ```bash
-    source porfolio-env/Scripts/activate #En Windows
+    source porfolio-env/Scripts/activate #En Windows esto siempre y cuando usemos la terminal proporcionada por Git que se llamaría "Git bash"
 ```
 
 ##### Instalar la dependencia necesaria para el entorno virtual en este caso Django 4.1
