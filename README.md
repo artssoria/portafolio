@@ -104,3 +104,5 @@ Se va renderizar la vista principal de la pagina
 
  - Usuario: admin
  - Contraseña : admin
+
+* En este lugar vamos a ver por primera vez una estructura completa de modelos y vistas funcionando de manera visual a Django. 
