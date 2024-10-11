@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} {% endblock %} </title>
+</head>
+<body>
+    <!-- header -->
+    <h1>Mi Portafolio personal</h1>
+    <ul>
+        <li><a href="{% url 'home' %}">Inicio</a></li>
+        <li><a href="{% url 'about' %}">Acerca de</a></li>
+        <li><a href="{% url 'porfolio' %}">Portafolio</a></li>
+        <li><a href="{% url 'contact' %}">Contacto</a></li>
+      </ul>
+    <!-- contenido -->
+     {% block content %} {% endblock%}
+
+     <!-- continuar desde https://youtu.be/mGFeVYxE7yo?si=7xIxWuwzNIhf65os&t=610
+      10:10 en el video  -->
+</body>
+</html>
