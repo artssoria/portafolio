@@ -59,9 +59,9 @@ Crear un super usuario para administrar el panel de administración de la aplica
   * Por convención siempre suele utilizarse el usuario "admin".
 Entonces:
 
-Nombre de usuario : admin
-Dirección de correo electrónico: admin@admin.com
-Password:
+- Nombre de usuario : admin
+- Dirección de correo electrónico: admin@admin.com
+- Password:
 
 En este apartado la contraseña no se vizualiza en la terminal por cuestiones de seguridad, aquí habrá que recordar qué teclas usamos y como configuramos la contraseña. Por obvias razones, al crear un usuario de tales caracteristicas, la contreña será **admin**. 
 
