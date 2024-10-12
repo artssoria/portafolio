@@ -67,7 +67,7 @@ En este apartado la contraseña no se vizualiza en la terminal por cuestiones de
 
 Nos va a solicitar de nuevo la contreseña para configurarla definitivamente, le ponemos la misma.
 
-Despues nos va a preguntar si queremos que utilize un método de validación Bypass ingresemos la tecla **N**
+Despues nos va a preguntar si queremos que pase por alto la validación ingresemos la tecla **Y**
 Al último los va a arrojar el siguente texto
 
 ```bash
@@ -148,5 +148,5 @@ def porfolio(request):
     return render(request, 'core/portfolio.html')
 def contact(request):
     return render(request, 'core/contact.html')
-    
+
 ```
