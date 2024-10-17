@@ -15,12 +15,20 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from core import views
+from core import views as core_views
+from porfolio import views as porfolio_views
+
 
 urlpatterns = [
-    path('',views.home, name="home"),
-    path("about/", views.about, name="about"),
-    path("porfolio/", views.porfolio, name="porfolio"),
-    path("contact/", views.contact, name="contact"),
+    path('',core_views.home, name="home"),
+    path("about/", core_views.about, name="about"),
+    path("porfolio/", porfolio_views.porfolio, name="portfolio"),
+    path("contact/", core_views.contact, name="contact"),
     path('admin/', admin.site.urls),
 ]
+
+from django.conf import settings
+
+if settings.DEBUG:
+    from django.conf.urls.static import static
+    urlpatterns += static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
