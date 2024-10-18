@@ -1,4 +1,3 @@
-
 /* IMAGENES DE FONDO DE LAS PAGINAS */
 
 .home {
@@ -31,7 +30,7 @@
 }
 
 .titulos {
-    color: antiquewhite;
+    color: #F8F8F2; /* Blanco suave de Dracula theme */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -42,8 +41,8 @@
 
 .footer {
     grid-area: footer;
-    background-color: #6d6d6d;
-    color: #dadada;
+    background-color: #282A36; /* Color de fondo oscuro de Dracula */
+    color: #BD93F9; /* Morado brillante */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -57,6 +56,7 @@
     font-weight: 700;
     margin-bottom: 20px;
     text-align: center;
+    color: #FF79C6; /* Rosa brillante */
 }
 
 .footer__lista {
@@ -67,14 +67,14 @@
 }
 
 .footer__icono {
-	color: #b9b9b9;
+	color: #6272A4; /* Azul grisáceo */
 	font-size: 30px;
 	padding: 0 10px;
 	display: block;
 }
 
 .footer__icono:hover {
-    color: rgb(255, 255, 255);
+    color: #8BE9FD; /* Azul claro brillante al pasar el ratón */
     font-size: 33px;
     transition: all 0.5s ease-out;
 }
@@ -111,6 +111,7 @@
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
+    background-color: #44475A; /* Fondo oscuro de las tarjetas */
 }
 
 .skill__logo {
@@ -121,5 +122,121 @@
 .skill__titulo {
     margin-top: 5px;
     font-size: 16px;
-    color: #033F62;
+    color: #FF79C6; /* Rosa brillante para los títulos */
+}
+
+
+/* Adaptación de colores para Bootstrap y otros estilos personalizados */
+
+/* Cambiar el fondo de la navbar */
+.navbar {
+    background-color: #282A36; /* Color de fondo oscuro del tema Dracula */
+}
+
+.navbar-brand, .navbar-nav .nav-link {
+    color: #F8F8F2; /* Blanco suave */
+}
+
+.navbar-nav .nav-link:hover, .navbar-nav .nav-link.active {
+    color: #FF79C6; /* Rosa brillante para enlaces activos o en hover */
+}
+
+/* Fondo del cuerpo y secciones */
+body {
+    background-color: #44475A; /* Fondo general oscuro */
+    color: #F8F8F2; /* Texto en color blanco suave */
+}
+
+/* Estilos de la cabecera */
+.imagen-fondo {
+    background-color: #282A36; /* Fondo oscuro */
+    color: #F8F8F2; /* Texto en blanco suave */
+}
+
+/* Botones de Bootstrap */
+.btn-primary {
+    background-color: #BD93F9; /* Morado claro */
+    border-color: #BD93F9;
+}
+
+.btn-primary:hover {
+    background-color: #FF79C6; /* Rosa brillante al pasar el ratón */
+    border-color: #FF79C6;
+}
+
+.btn-secondary {
+    background-color: #6272A4; /* Azul grisáceo */
+    border-color: #6272A4;
+}
+
+.btn-secondary:hover {
+    background-color: #8BE9FD; /* Azul claro al pasar el ratón */
+    border-color: #8BE9FD;
+}
+
+/* Estilos del footer */
+.footer {
+    background-color: #282A36;
+    color: #BD93F9; /* Morado claro */
+}
+
+.footer__icono {
+    color: #6272A4; /* Azul grisáceo */
+}
+
+.footer__icono:hover {
+    color: #FF79C6; /* Rosa brillante al pasar el ratón */
+}
+
+/* Sección de contenido */
+.bg-light {
+    background-color: #44475A !important; /* Fondo oscuro para las secciones claras de Bootstrap */
+}
+
+/* Títulos */
+h1, h2, h3, h4, h5, h6 {
+    color: #F8F8F2; /* Blanco suave */
+}
+
+/* Formularios */
+.form-control {
+    background-color: #282A36; /* Fondo oscuro */
+    color: #F8F8F2; /* Texto en blanco suave */
+    border: 1px solid #6272A4; /* Borde gris-azul */
+}
+
+.form-control:focus {
+    background-color: #44475A;
+    color: #F8F8F2;
+    border-color: #FF79C6; /* Borde rosa brillante al enfocarse */
+    box-shadow: 0 0 0 0.2rem rgba(255, 121, 198, 0.25); /* Sombra rosada */
+}
+
+/* Cambiar color de los enlaces dentro del contenido */
+a {
+    color: #8BE9FD; /* Azul claro */
+}
+
+a:hover {
+    color: #FF79C6; /* Rosa brillante */
+}
+
+/* Estilos personalizados adicionales */
+.titulos {
+    color: #F8F8F2; /* Blanco suave */
+}
+
+/* Cards y otros contenedores */
+.card {
+    background-color: #282A36; /* Fondo oscuro */
+    color: #F8F8F2; /* Texto blanco suave */
+    border: 1px solid #6272A4; /* Borde azul grisáceo */
+}
+
+.card-header {
+    background-color: #44475A; /* Fondo más claro */
+}
+
+.card-body {
+    color: #F8F8F2;
 }
